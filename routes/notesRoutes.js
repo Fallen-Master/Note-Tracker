@@ -38,7 +38,7 @@ app.delete('/:id', (req, res) => {
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-          
+
             const result = json.filter((note) => note.id !== noteId);
 
             writeToFile('./db/db.json', result);
