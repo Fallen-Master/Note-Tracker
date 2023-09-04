@@ -6,8 +6,8 @@ const app = express();
 const notesRoutes = require('./routes/notesRoutes');
 
 // Middleware to handle JSON requests
-app.use(express.json()); 
-app.use(express.urlencoded({ extended: true })); 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Serve static files
 app.use(express.static('public'));
